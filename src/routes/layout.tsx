@@ -1,11 +1,10 @@
-import { component$, Slot, useStyles$ } from "@builder.io/qwik";
+import { component$, Slot } from "@builder.io/qwik";
 import { routeLoader$ } from "@builder.io/qwik-city";
 import type { RequestHandler } from "@builder.io/qwik-city";
+import Footer from "~/components/Footer/footer";
 
-import Header from "~/components/starter/header/header";
-import Footer from "~/components/starter/footer/footer";
-
-import styles from "./styles.css?inline";
+import Header from "~/components/Header/header";
+import Spacing from "~/components/Spacing/spacing";
 
 export const onGet: RequestHandler = async ({ cacheControl }) => {
   // Control caching for this request for best performance and to reduce hosting costs:
@@ -25,14 +24,18 @@ export const useServerTimeLoader = routeLoader$(() => {
 });
 
 export default component$(() => {
-  useStyles$(styles);
   return (
-    <>
-      <Header />
-      <main>
-        <Slot />
-      </main>
-      <Footer />
-    </>
+    <div class="[background-image:linear-gradient(180deg,#000033_0%,#00001d_24%,#00001d_76%,#000033_100%)]">
+      {/* TODO: wrap the component with this??? <CrowdsaleProvider> */}
+        <Header/>
+        <div class="m-auto flex min-h-screen max-w-7xl flex-col p-6">
+          <Spacing class="h-24" />
+          <Slot />
+          <Spacing class="h-12" />
+          <Footer />
+          <Spacing class="h-20" /> 
+        </div>
+      {/* TODO: wrap the component with this??? </CrowdsaleProvider> */}
+    </div>
   );
 });

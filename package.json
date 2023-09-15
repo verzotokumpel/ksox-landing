@@ -1,6 +1,5 @@
 {
-  "name": "my-qwik-basic-starter",
-  "description": "Demo App with Routing built-in (recommended)",
+  "name": "@apps/exchange-landing",
   "engines": {
     "node": ">=15.0.0"
   },
@@ -27,12 +26,22 @@
     "@types/node": "^20.4.5",
     "@typescript-eslint/eslint-plugin": "6.2.0",
     "@typescript-eslint/parser": "6.2.0",
+    "autoprefixer": "^10.4.15",
     "eslint": "8.45.0",
     "eslint-plugin-qwik": "^1.2.10",
+    "postcss": "^8.4.29",
     "prettier": "3.0.0",
+    "tailwindcss": "^3.3.3",
     "typescript": "5.1.6",
     "undici": "5.22.1",
     "vite": "4.4.7",
     "vite-tsconfig-paths": "4.2.0"
+  },
+  "dependencies": {
+    "@wagmi/chains": "^1.8.0",
+    "@wagmi/core": "^1.4.1",
+    "@web3modal/ethereum": "^2.7.1",
+    "@web3modal/html": "^2.7.1",
+    "viem": "^1.10.9"
   }
 }
