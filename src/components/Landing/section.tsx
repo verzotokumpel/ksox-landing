@@ -18,8 +18,10 @@ export default component$((props: SectionProps) => {
           <img
             src={props.imagePath}
             alt="about"
-            elementtiming={""}
-            fetchpriority={"high"}
+            width="1180"
+            height="960"
+            data-elementtiming={""}
+            data-fetchpriority={"high"}
           />
         </div>
 
@@ -40,4 +42,4 @@ export default component$((props: SectionProps) => {
   )
 })
 
-// TODO: ogarnij te sciezki do zdjec - w solid bylo uzywane to base czesto
+// TODO: (img src) ogarnij te sciezki do zdjec - w solid bylo uzywane to base czesto

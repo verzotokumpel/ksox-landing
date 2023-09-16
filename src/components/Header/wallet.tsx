@@ -6,7 +6,7 @@ interface WalletProps {
 }
 
 export default component$((props: WalletProps) => {
-  // TODO: o co chodzi z tym? const wallet = useWallet();
+  // TODO: (wallet) o co chodzi z tym? const wallet = useWallet();
 
   return (
     <div
@@ -15,13 +15,13 @@ export default component$((props: WalletProps) => {
       <NetworkDropdown disabled={false} />
       <div
         class="token-linear-wipe-button cursor-pointer rounded-full px-4 py-2 text-center font-lexend font-medium text-text-1"
-        //TODO: onClick$={async () => {
+        //TODO: (wallet) onClick$={async () => {
         //   if (!wallet.walletClient) {
         //     await walletClientConnect();
         //   }
         // }}
       >
-        {/*TODO: {wallet.address == undefined
+        {/*TODO: (wallet) {wallet.address == undefined
           ? "Connect"
           : firstLastChars(wallet.address, 6, 6)} */}
           Connect

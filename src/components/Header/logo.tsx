@@ -1,4 +1,4 @@
-
+/* eslint-disable qwik/jsx-img */
 import { component$ } from "@builder.io/qwik";
 import { Link } from "@builder.io/qwik-city";
 

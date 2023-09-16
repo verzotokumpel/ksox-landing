@@ -1,3 +1,4 @@
+/* eslint-disable qwik/jsx-img */
 import { component$, useSignal } from "@builder.io/qwik";
 
 interface NetworkDropdownProps {
@@ -29,8 +30,8 @@ export default component$((props: NetworkDropdownProps) => {
             alt="network"
             width={25}
             height={25}
-            elementtiming={""}
-            fetchpriority={"high"}
+            data-elementtiming={""}
+            data-fetchpriority={"high"}
             class={props.disabled ? "grayscale" : ""}
           />
         </div>
@@ -40,8 +41,8 @@ export default component$((props: NetworkDropdownProps) => {
             src="/gfx/down-arrow.svg"
             alt="arrow"
             width={20}
-            elementtiming={""}
-            fetchpriority={"high"}
+            data-elementtiming={""}
+            data-fetchpriority={"high"}
             class={props.disabled ? "grayscale" : ""}
           />
         </div>

@@ -1,9 +1,10 @@
+/* eslint-disable qwik/jsx-img */
 import { component$ } from "@builder.io/qwik";
 import Divider from "../Divider/divider";
 import ProgressBar from "./progressBar";
 import AmountInput from "./amountInput";
 import TokenDropdown from "./tokenDropdown";
-import TimerTile from "./TimerTile";
+import TimerTile from "./timerTile";
 
 export default component$(() => {
   // TODO: to wszystko trzeba jakos ogarnac:
@@ -300,8 +301,8 @@ export default component$(() => {
               <img
                 src="/gfx/asset_icons/eth.svg"
                 width={30}
-                elementtiming={""}
-                fetchpriority={"high"}
+                data-elementtiming={""}
+                data-fetchpriority={"high"}
               />
             </div>
             <div class="col-start-2 col-end-3 grid grid-cols-[auto_auto_105px] items-center justify-start gap-4">

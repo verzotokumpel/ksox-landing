@@ -1,3 +1,4 @@
+/* eslint-disable qwik/jsx-img */
 import { Slot, component$ } from "@builder.io/qwik";
 
 interface BenefitProps {
@@ -14,8 +15,8 @@ export default component$((props: BenefitProps) => {
         <img
           class="w-6"
           src="/gfx/sign.svg"
-          elementtiming=""
-          fetchpriority="high"
+          data-elementtiming=""
+          data-fetchpriority="high"
         />
       </div>
 

@@ -1,3 +1,4 @@
+/* eslint-disable qwik/jsx-img */
 import { component$ } from "@builder.io/qwik";
 import Item from "./item";
 import ItemIcon from "./itemIcon";
@@ -16,8 +17,8 @@ export default component$(() => {
               // src={joinPaths(base, "/gfx/twitter.svg")}
               src="/gfx/twitter.svg"
               alt="media"
-              fetchpriority="auto"
-              elementtiming="svg-image"
+              data-fetchpriority="auto"
+              data-elementtiming="svg-image"
               width={40}
               height={40}
             />
@@ -31,8 +32,8 @@ export default component$(() => {
               // src={joinPaths(base, "/gfx/discord.svg")}
               src="/gfx/discord.svg"
               alt="media"
-              fetchpriority="auto"
-              elementtiming="svg-image"
+              data-fetchpriority="auto"
+              data-elementtiming="svg-image"
               width={40}
               height={40}
             />
@@ -46,8 +47,8 @@ export default component$(() => {
               // src={joinPaths(base, "/gfx/telegram.svg")}
               src="/gfx/telegram.svg"
               alt="media"
-              fetchpriority="auto"
-              elementtiming="svg-image"
+              data-fetchpriority="auto"
+              data-elementtiming="svg-image"
               width={40}
               height={40}
             />

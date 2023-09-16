@@ -1,3 +1,4 @@
+/* eslint-disable qwik/jsx-img */
 import { component$ } from "@builder.io/qwik";
 import BigText from "./bigText";
 import Spacing from "../Spacing/spacing";
@@ -22,8 +23,10 @@ export default component$(() => {
         <img
           src="/gfx/laptop.png"
           class="mx-auto"
-          elementtiming=""
-          fetchpriority="high"
+          width="1200"
+          height="724"
+          data-elementtiming={""}
+          data-fetchpriority={"high"}
         />
       </div>
     </div>

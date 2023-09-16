@@ -12,11 +12,11 @@ export default component$((props: ItemProps) => {
       <div class="text-md row-start-1 row-end-2 grid grid-cols-[auto_1fr] items-center justify-center gap-2 font-normal">
         <div class="col-start-1 col-end-2">
           <img
-            // TODO: how to do this in qwik??? src={joinPaths(base, props.imageSrc)}
+            // TODO: (img src) how to do this in qwik??? src={joinPaths(base, props.imageSrc)}
             src={props.imageSrc}
             alt="media"
-            fetchpriority="auto"
-            elementtiming="svg-image"
+            data-fetchpriority="auto"
+            data-elementtiming="svg-image"
             width={25}
             height={25}
           />

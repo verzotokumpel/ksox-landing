@@ -25,7 +25,7 @@ export default component$(() => {
         href="/token"
         class="col-start-1 col-end-3 row-start-2 row-end-3 max-md:col-start-1 max-md:col-end-2 max-md:row-start-3 max-md:row-end-4"
       >
-        {/* TODO: co z tym? <div
+        {/* TODO: (crowdsale) co z tym? <div
           class={`rounded-full p-[11px_32px] text-center font-lexend text-hero-button font-medium md:p-[16px_40px] ${
             crowdsale.phaseContract.isPhaseActive
               ? "token-linear-wipe-button"

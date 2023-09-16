@@ -1,3 +1,4 @@
+/* eslint-disable qwik/jsx-img */
 import { component$, useSignal } from "@builder.io/qwik";
 
 interface TokenDropdownProps {
@@ -30,8 +31,8 @@ export default component$((props: TokenDropdownProps) => {
             src="/gfx/asset_icons/eth.svg"
             alt="network"
             width={25}
-            elementtiming={""}
-            fetchpriority={"high"}
+            data-elementtiming={""}
+            data-fetchpriority={"high"}
             class={props.disabled ? "grayscale" : ""}
           />
         </div>
@@ -43,8 +44,8 @@ export default component$((props: TokenDropdownProps) => {
             src="/gfx/down-arrow.svg"
             alt="arrow"
             width={20}
-            elementtiming={""}
-            fetchpriority={"high"}
+            data-elementtiming={""}
+            data-fetchpriority={"high"}
             class={props.disabled ? "grayscale" : ""}
           />
         </div>
